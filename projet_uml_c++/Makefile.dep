@@ -1,0 +1,11 @@
+lecteurcarte.o: lecteurcarte.cpp lecteurcarte.h base_clients.h voyants.h \
+ timer.h prise.h bouton.h generateur_save.h
+borne.o: borne.cpp voyants.h lecteurcarte.h base_clients.h timer.h \
+ prise.h bouton.h generateur_save.h
+base_clients.o: base_clients.cpp base_clients.h
+voyants.o: voyants.cpp voyants.h timer.h
+prise.o: prise.cpp prise.h voyants.h
+timer.o: timer.cpp timer.h
+bouton.o: bouton.cpp bouton.h
+generateur_save.o: generateur_save.cpp generateur_save.h prise.h \
+ voyants.h bouton.h timer.h
